@@ -1,0 +1,22 @@
+body
+{
+    width: 100%;
+    padding: 20px;
+}
+
+
+.center-align-div
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.test-id-num
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
