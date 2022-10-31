@@ -15,6 +15,8 @@ function makeid(length) {
 var testID = makeid(6);
 document.getElementById("test-id").innerHTML = 'TEST ID: '+testID;
 
+var testName = document.getElementById("test-name-input").value;
+
 var upload = document.getElementById('inputGroupFileAddon04');
 upload.addEventListener('click', function(e) {
   var fileList = document.getElementById('inputGroupFile04').files[0];
@@ -45,6 +47,7 @@ upload.addEventListener('click', function(e) {
         firebase.database().ref('results/'+testID ).set({
           testID: testID,
           status : "NOT STARTED",
+          testName : testName,
           marks: 0,
           startedTime : 0,
         });
